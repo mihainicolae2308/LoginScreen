@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textSize="@dimen/sp30"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/dp15"
+        android:textColor="@color/weak_red"/>
+
+    <EditText
+        android:id="@+id/edit_text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="@dimen/sp23"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="@dimen/dp15"/>
+
+    <EditText
+        android:id="@+id/edit_text_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:textSize="@dimen/sp23"
+        android:inputType="phone"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginLeft="@dimen/dp15"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_accept_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i_accept_t_c"
+        android:textSize="@dimen/sp17"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginLeft="@dimen/dp15"/>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp55"
+        android:layout_marginTop="@dimen/dp15"
+        android:background="@color/dark_blue"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp20"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:onClick="displayValidatedInfo"/>
+
+    <TextView
+        android:id="@+id/text_view_display_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp15"/>
+
+</LinearLayout>
