@@ -55,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
 
         if (!termsAccepted) {
             mCheckBoxAcceptTerms.setError("Please accept terms!");
+        } else {
+            mCheckBoxAcceptTerms.setError(null);
         }
 
         if (validateEmail(emailAddress) && !phoneNumber.isEmpty() && termsAccepted) {
